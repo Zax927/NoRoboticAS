@@ -24,7 +24,6 @@ namespace NoRoboticAS
                     if (p.isRobotic())
                     {
                         Part.AutoStrutMode prMode = p.autoStrutMode;
-
                         p.autoStrutMode = Part.AutoStrutMode.Off;
                         Debug.Log("Autostruts removed from " + p + ". Previous state " + prMode);
                     }
