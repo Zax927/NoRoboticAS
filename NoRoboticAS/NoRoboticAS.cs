@@ -1,7 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
-
 
 namespace NoRoboticAS
 {
@@ -21,9 +19,10 @@ namespace NoRoboticAS
             if (unASKey)
             {
                 RefreshParts();
-                foreach(Part p in parts)
+                foreach (Part p in parts)
                 {
-                    if (p.isRobotic()){
+                    if (p.isRobotic())
+                    {
                         Part.AutoStrutMode prMode = p.autoStrutMode;
 
                         p.autoStrutMode = Part.AutoStrutMode.Off;
